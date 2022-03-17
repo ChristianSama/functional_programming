@@ -26,7 +26,7 @@ function remove(books, bookName) {
 
 //6
 const ratings = watchList.map(movie => ({title: movie.Title,
-    rating: movie.imdbRating}));
+                                         rating: movie.imdbRating}));
 
     
 //7
@@ -36,8 +36,8 @@ for (let i = 0; i < this.length; i++) {
 
 //8
 const filteredList = watchList.map(movie => ({title: movie.Title, 
-    rating: movie.imdbRating}))
-.filter(movie => movie.rating >= 8);
+                                              rating: movie.imdbRating}))
+                              .filter(movie => movie.rating >= 8);
 
 //9
 const newArray = [];
@@ -61,13 +61,13 @@ return original.concat(newItem);
 
 //14
 let ratings = watchList.filter(movie => movie.Director === "Christopher Nolan")
-.map(movie => parseFloat(movie.imdbRating))
+                       .map(movie => parseFloat(movie.imdbRating))
 
 let averageRating = ratings.reduce((sum, r) => sum + r, 0)/ratings.length;
 
 //15
 return arr.filter(el => Number.isInteger(el) && el > 0)
-.map(el => el*el)
+          .map(el => el*el)
 
 //16
 return arr.sort((a, b) => a === b ? 0 : a < b ? -1 : 1);
