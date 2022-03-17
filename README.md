@@ -1,0 +1,1 @@
+Solutions for the functional programming in Javascript module of freecodecamp.org
